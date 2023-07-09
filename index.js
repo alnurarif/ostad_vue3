@@ -23,7 +23,7 @@ const isEven = number => (number % 2 === 0) ? 'Even' : 'Odd'
 const multiply = (a, b) =>  a * b
 
 
-const getLargestNumber = ( num1, num2 ) => (num1 > num2) ? num1 : num2 
+const getLargestNumber = ( num1, num2 ) => ( num1 > num2 && num1 ) || ( num2 > num1 && num2 )
 
 
 const getAddressCity = obj  => obj?.city ? obj.city : 'Unknown'
