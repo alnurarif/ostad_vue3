@@ -20,13 +20,13 @@ const info = pageInfo
                         <address class="side-icon-boxes">
                             <div class="side-icon-box">
                                 <div class="side-icon">
-                                    <img :src="image1" alt="">
+                                    <img :src="info.image1" alt="">
                                 </div>
                                 <p v-html="info.address"></p>
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
-                                    <img :src="image2" alt="">
+                                    <img :src="info.image2" alt="">
                                 </div>
                                 <p><strong>Telephone: </strong>
                                     <a href="callto:8801812726495">+8801812726495</a> <br>
@@ -35,7 +35,7 @@ const info = pageInfo
                             </div>
                             <div class="side-icon-box">
                                 <div class="side-icon">
-                                    <img :src="image2" alt="">
+                                    <img :src="info.image2" alt="">
                                 </div>
                                 <p><strong>E-mail: </strong>
                                     <a href="mailto:youremail@example.com">youremail@example.com</a> <br>
