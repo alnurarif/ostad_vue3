@@ -14,7 +14,7 @@ const selectThisImage = (index) => {
 
 <template>
 	<div class="thumbnails-container" >
-		<div class="thumbnail" v-for="(image, index) in images" :key="index" :style="{ opacity : index == currentIndex ? `1` :  `.5`}"  @click="selectThisImage(index)">
+		<div class="thumbnail" v-for="(image, index) in images" :key="index" :style="{ opacity : index == currentIndex ? `1` :  `.5`, height : index == currentIndex ? `60px` :  `50px`}"  @click="selectThisImage(index)">
 			<img :src="image"/>
 		</div>
 	</div>
@@ -43,6 +43,7 @@ const selectThisImage = (index) => {
 .thumbnail img {
 	max-width: 100%;
 	max-height: 100%;
+	height: inherit;
 }
 
 </style>

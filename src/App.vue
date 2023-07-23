@@ -10,11 +10,11 @@ const images = imagesInfo;
 const currentIndex = ref(0);
 
 const prev = () => {
-	currentIndex.value = (currentIndex.value - 1 + images.value.length) % images.value.length;
+	currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
 };
 
 const next = () => {
-	currentIndex.value = (currentIndex.value + 1) % images.value.length;
+	currentIndex.value = (currentIndex.value + 1) % images.length;
 };
 
 const selectIndex = (index) => {
